@@ -1,63 +1,118 @@
 {
-    
-        "usuarios": [
-            {
-                "id": 1,
-                "nombre": "Juan"
-            },
-            {
-                "id": 2,
-                "nombre": "María"
-            },
-            {
-                "id": 3,
-                "nombre": "Pedro"
-            }
-        ],
-        "conversaciones": [
-            {
-                "id": 1,
-                "participantes": [
-                    1,
-                    2
-                ]
-            },
-            {
-                "id": 2,
-                "participantes": [
-                    1,
-                    3
-                ]
-            }
-        ],
-        "mensajes": [
-            {
-                "id": 1,
-                "conversacionId": 1,
-                "remite": 1,
-                "contenido": "¡Hola María!",
-                "hora": "2024-02-29T10:00:00"
-            },
-            {
-                "id": 2,
-                "conversacionId": 1,
-                "remite": 2,
-                "contenido": "Hola Juan, ¿cómo estás?",
-                "hora": "2024-02-29T10:05:00"
-            },
-            {
-                "id": 3,
-                "conversacionId": 2,
-                "remite": 1,
-                "contenido": "Hola Pedro, ¿qué tal?",
-                "hora": "2024-02-29T10:10:00"
-            },
-            {
-                "id": 4,
-                "conversacionId": 2,
-                "remite": 3,
-                "contenido": "Hola Juan, todo bien, ¿y tú?",
-                "hora": "2024-02-29T10:15:00"
-            }
-        ]
-    }
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Juan",
+            "numeroDeCelular": 3124567898,
+            "password": "clave1",
+            "fotoDePerfil": "https://cdn-icons-png.flaticon.com/512/8102/8102780.png",
+            "flag": true,
+            "info": "Estudiante de ingenieria",
+            "ultimaVezEnLinea": "2024-03-02T18:30:00.000Z"
+        },
+        {
+            "id": 2,
+            "nombre": "Maria",
+            "numeroDeCelular": 3146879865,
+            "password": "clave3",
+            "fotoDePerfil": "https://cdn-icons-png.flaticon.com/512/8102/8102780.png",
+            "flag": true,
+            "info": "Estudiante de sociales",
+            "ultimaVezEnLinea": "2024-02-02T18:45:00.000Z"
+        },
+        {
+            "id": 3,
+            "nombre": "Isabel",
+            "numeroDeCelular": 3135687312,
+            "password": "contra23",
+            "fotoDePerfil": "https://cdn-icons-png.flaticon.com/512/8102/8102780.png",
+            "flag": true,
+            "info": "Estudiante de ingenieria",
+            "ultimaVezEnLinea": "2024-01-06T18:30:00.000Z"
+        },
+        {
+            "id": 4,
+            "nombre": "Yohana",
+            "numeroDeCelular": 3113457865,
+            "password": "contra45",
+            "fotoDePerfil": "https://cdn-icons-png.flaticon.com/512/8102/8102780.png",
+            "flag": true,
+            "info": "Estudiante de ingenieria",
+            "ultimaVezEnLinea": "2024-02-12T13:30:00.000Z"
+        },
+        {
+            "id": 5,
+            "nombre": "Ana",
+            "numeroDeCelular": 3124567898,
+            "password": "clave34",
+            "fotoDePerfil": "https://cdn-icons-png.flaticon.com/512/8102/8102780.png",
+            "flag": true,
+            "info": "Estudiante de ingenieria",
+            "ultimaVezEnLinea": "2024-03-02T18:30:00.000Z"
+        }
+    ],
+    "mensajes": [
+        {
+            "senderUser": 1,
+            "recipientUser": 2,
+            "conversaciones": [
+                {
+                    "sendBy": 1,
+                    "date": "2024-03-02",
+                    "hour": "18:30",
+                    "message": "Hola, ¿cómo estás?",
+                    "flag": false
+                },
+                {
+                    "sendBy": 2,
+                    "date": "2024-03-02",
+                    "hour": "18:35",
+                    "message": "Estoy bien, ¿y tú?",
+                    "flag": true
+                }
+            ]
+        },
+        {
+            "senderUser": 3,
+            "recipientUser": 4,
+            "conversaciones": [
+                {
+                    "sendBy": 3,
+                    "date": "2024-03-02",
+                    "hour": "18:30",
+                    "message": "Hola, ¿cómo estás?, Iras al gym hoy?",
+                    "flag": false
+                },
+                {
+                    "sendBy": 4,
+                    "date": "2024-03-02",
+                    "hour": "18:35",
+                    "message": "Estoy bien, ¿y tú?, si claro y tú?",
+                    "flag": true
+                }
+            ]
+        },
+        {
+            "senderUser": 4,
+            "recipientUser": 5,
+            "conversaciones": [
+                {
+                    "sendBy": 4,
+                    "date": "2024-03-02",
+                    "hour": "18:30",
+                    "message": "Hola, ¿cómo estás?",
+                    "flag": false
+                },
+                {
+                    "sendBy": 5,
+                    "date": "2024-03-02",
+                    "hour": "18:35",
+                    "message": "Estoy bien, ¿y tú?",
+                    "flag": true
+                }
+            ]
+        }
+        
+        
+    ]
+}
